@@ -18,10 +18,10 @@ public class Rectangle implements Shape {
     public void input() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Input Rectangle's width: ");
+        System.out.print("Input Rectangle's width: ");
         setWidth(scanner.nextDouble());
 
-        System.out.println("Input Rectangle's height: ");
+        System.out.print("Input Rectangle's height: ");
         setHeight(scanner.nextDouble());
     }
 
@@ -43,7 +43,7 @@ public class Rectangle implements Shape {
     @Override
     public void printShape() {
         System.out.println("Name: " + getName() +
-                "Area: " + getArea() +
-                "Perimeter: " + getPerimeter());
+                " Area: " + getArea() +
+                " Perimeter: " + getPerimeter());
     }
 }

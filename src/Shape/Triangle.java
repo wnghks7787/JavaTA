@@ -15,7 +15,7 @@ public class Triangle implements Shape {
     public void input() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Input Triangle's side: ");
+        System.out.print("Input Triangle's side: ");
         setSide(scanner.nextDouble());
     }
 
@@ -37,7 +37,7 @@ public class Triangle implements Shape {
     @Override
     public void printShape() {
         System.out.println("Name: " + getName() +
-                "Area: " + getArea() +
-                "Perimeter: " + getPerimeter());
+                " Area: " + String.format("%3f", getArea()) +
+                " Perimeter: " + getPerimeter());
     }
 }
