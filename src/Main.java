@@ -1,5 +1,5 @@
 import Shape.Shape;
-import Shape.Cycle;
+import Shape.Circle;
 import Shape.Triangle;
 import Shape.Rectangle;
 
@@ -9,11 +9,11 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Shape> shapes = new ArrayList<>(5);
 
-        Shape c1 = new Cycle();
+        Shape c1 = new Circle();
         Shape t1 = new Triangle();
         Shape r1 = new Rectangle();
         Shape r2 = new Rectangle();
-        Shape c2 = new Cycle();
+        Shape c2 = new Circle();
 
         shapes.add(c1);
         shapes.add(t1);
