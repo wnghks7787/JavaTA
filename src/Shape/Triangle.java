@@ -1,41 +1,33 @@
 package Shape;
 
+import static java.lang.Math.sqrt;
+
 public class Triangle implements Shape {
-    private String name;
-    private double area;
-    private int perimeter;
+    private double side;
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setArea(double area) {
-        this.area = area;
-    }
-
-    public void setPerimeter(int perimeter) {
-        this.perimeter = perimeter;
+    public void setSide(double side) {
+        this.side = side;
     }
 
     @Override
     public String getName() {
-        return "";
+        return "Triangle";
     }
 
     @Override
     public double getArea() {
-        return 0;
+        return 0.25 * sqrt(3) * Math.pow(side, 2);
     }
 
     @Override
     public double getPerimeter() {
-        return 0;
+        return 3 * side;
     }
 
     @Override
     public void printShape() {
-        System.out.println("Name: " + name +
-                "Area: " + area +
-                "Perimeter: " + perimeter);
+        System.out.println("Name: " + getName() +
+                "Area: " + getArea() +
+                "Perimeter: " + getPerimeter());
     }
 }
