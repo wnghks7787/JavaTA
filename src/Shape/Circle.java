@@ -37,7 +37,7 @@ public class Circle implements Shape {
     @Override
     public void printShape() {
         System.out.println("Name: " + getName() +
-                " Area: " + String.format("%3f", getArea()) +
+                " Area: " + String.format("%.3f", getArea()) +
                 " Perimeter: " + getPerimeter());
     }
 }
