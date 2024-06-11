@@ -21,9 +21,12 @@ public class Main {
         shapes.add(r2);
         shapes.add(c2);
 
-        for(int i = 0 ; i < 5 ; i++) {
-
+        for(Shape s : shapes) {
+            s.input();
         }
 
+        for(Shape s : shapes) {
+            s.printShape();
+        }
     }
 }
