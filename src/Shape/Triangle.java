@@ -5,6 +5,18 @@ public class Triangle implements Shape {
     private double area;
     private int perimeter;
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
+    }
+
+    public void setPerimeter(int perimeter) {
+        this.perimeter = perimeter;
+    }
+
     @Override
     public String getName() {
         return "";
