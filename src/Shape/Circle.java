@@ -2,8 +2,12 @@ package Shape;
 
 public class Circle implements Shape {
 
-    private int radius;
+    private double radius;
     private final double PI = 3.14;
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
 
     @Override
     public String getName() {
