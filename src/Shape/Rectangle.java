@@ -34,6 +34,8 @@ public class Rectangle implements Shape {
 
     @Override
     public void printShape() {
-
+        System.out.println("Name: " + name +
+                "Area: " + area +
+                "Perimeter: " + perimeter);
     }
 }
