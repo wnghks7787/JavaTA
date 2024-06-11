@@ -1,5 +1,7 @@
 package Shape;
 
+import java.util.Scanner;
+
 public class Circle implements Shape {
 
     private double radius;
@@ -7,6 +9,14 @@ public class Circle implements Shape {
 
     public void setRadius(double radius) {
         this.radius = radius;
+    }
+
+    @Override
+    public void input() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter Circle's radius: ");
+        setRadius(scanner.nextDouble());
     }
 
     @Override

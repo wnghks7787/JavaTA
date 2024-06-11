@@ -1,5 +1,7 @@
 package Shape;
 
+import java.util.Scanner;
+
 public class Rectangle implements Shape {
     private double width;
     private double height;
@@ -10,6 +12,17 @@ public class Rectangle implements Shape {
 
     public void setHeight(double height) {
         this.height = height;
+    }
+
+    @Override
+    public void input() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Input Rectangle's width: ");
+        setWidth(scanner.nextDouble());
+
+        System.out.println("Input Rectangle's height: ");
+        setHeight(scanner.nextDouble());
     }
 
     @Override

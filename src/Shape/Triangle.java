@@ -1,5 +1,7 @@
 package Shape;
 
+import java.util.Scanner;
+
 import static java.lang.Math.sqrt;
 
 public class Triangle implements Shape {
@@ -7,6 +9,14 @@ public class Triangle implements Shape {
 
     public void setSide(double side) {
         this.side = side;
+    }
+
+    @Override
+    public void input() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Input Triangle's side: ");
+        setSide(scanner.nextDouble());
     }
 
     @Override
