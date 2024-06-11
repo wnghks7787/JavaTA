@@ -3,7 +3,7 @@ package Shape;
 public interface Shape {
     String getName();
     double getArea();
-    int getPerimeter();
+    double getPerimeter();
 
     void printShape();
 }

@@ -28,7 +28,7 @@ public class Triangle implements Shape {
     }
 
     @Override
-    public int getPerimeter() {
+    public double getPerimeter() {
         return 0;
     }
 
